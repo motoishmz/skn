@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sakane Footages</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="http://getbootstrap.com/examples/cover/cover.css">
+<link rel="stylesheet" href="/sakane.css">
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body class="single">
+<div class="site-wrapper">
+<div class="site-wrapper-inner">
+<div class="cover-container">
+
+<div class="masthead clearfix">
+<div class="inner">
+<h3 class="masthead-brand">Sakane Footages</h3>
+<nav>
+<ul class="nav masthead-nav">
+<li class="active"><a href="/">Archive</a></li>
+<li><a href="/contributors">Contributors</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</div><!-- /.masthead -->
+<!-- ･゜･*:.｡..:*･'｡. .｡.:*･゜･* -->
+
+
+<article>
+<p><img src="http://dummyimage.com/16:9x900"></p>
+
+
+<div class="row">
+  <div class="col-md-4 text-attr">
+  <h2>Tags</h2>
+  <ul>
+
+  <% if file_found %>
+    <li><a href="#">testtag</a></li>
+    <li><a href="#">testtag</a></li>
+  <% else %>
+    <li> - </li>
+  <% end %>
+  
+  </ul>
+  <h2>Contributor</h2>
+  <ul>
+
+  <% if file_found %>
+    <li><img src="http://dummyimage.com/50"> anonymous</li>
+    <li><img src="http://dummyimage.com/50"> anonymous</li>
+  <% else %>
+    <li> - </li>
+  <% end %>
+  </ul>
+  </div>
+
+
+  <div class="col-md-8">
+
+  <h1>
+    <span><%= footage.title %></span>
+    <small>
+    @ <%= footage.venue %>, <%= footage.date %></small>
+    <a href="#" class="btn btn-primary btn-lg btn-success">Edit this article</a>
+  </h1>
+
+  <hr>
+
+  <section class="contributed-text">
+
+  <% if file_found %>
+
+    <%= text %>
+
+  <% else %>
+    このファイルについての執筆はまだありません。
+  <% end %>
+
+  </section>
+
+
+  	<!-- <h2>heading</h2>
+  	<p>Using a single set of .col-md-* grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any .row.</p>
+  	<p>Using a single set of .col-md-* grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any .row.</p>
+
+	<h2>heading</h2>
+  	<p>Using a single set of .col-md-* grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any .row.</p>
+  	<p>Using a single set of .col-md-* grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any .row.</p>
+
+  	<h2>heading</h2>
+  	<p>Using a single set of .col-md-* grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any .row.</p>
+  	<p>Using a single set of .col-md-* grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any .row.</p> -->
+  </div>
+</div>
+
+
+</article>
+
+
+<!-- ･゜･*:.｡..:*･'｡. .｡.:*･゜･* -->
+<div class="mastfoot">
+<div class="inner">
+<p>&copy; Itsuo Sakane - 2015</a></p>
+</div>
+</div><!-- /.mastfoot -->
+
+</div>
+</div>
+</div>
+</body>
+</html>

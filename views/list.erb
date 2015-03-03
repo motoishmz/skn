@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sakane Footages</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="http://getbootstrap.com/examples/cover/cover.css">
+<link rel="stylesheet" href="/sakane.css">
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="site-wrapper">
+<div class="site-wrapper-inner">
+<div class="cover-container">
+
+<div class="masthead clearfix">
+<div class="inner">
+<h3 class="masthead-brand">Sakane Footages</h3>
+<nav>
+<ul class="nav masthead-nav">
+<li class="active"><a href="/">Archive</a></li>
+<li><a href="/contributors">Contributors</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</div><!-- /.masthead -->
+<!-- ･゜･*:.｡..:*･'｡. .｡.:*･゜･* -->
+
+
+
+<article>
+
+<table class="table table-responsive">
+<thead>
+<tr>
+  <th>Date</th>
+  <th>Title</th>
+  <th>Venue</th>
+  <th>Tags</th>
+</tr>
+</thead>
+<tbody>
+
+<% footages.each do |f| %>
+
+<tr>
+  <th><%= f.date %></th>
+  <td><a href="/footage/<%= f.id %>"><%= f.title %></a></td>
+  <td><%= f.venue %></td>
+  <td><%= f.tags %></td>
+</tr>
+
+<% end %>
+</tbody>
+</table>
+
+</article>
+
+
+
+<!-- ･゜･*:.｡..:*･'｡. .｡.:*･゜･* -->
+<div class="mastfoot">
+<div class="inner">
+<p>&copy; Itsuo Sakane - 2015</a></p>
+</div>
+</div><!-- /.mastfoot -->
+
+</div>
+</div>
+</div>
+</body>
+</html>

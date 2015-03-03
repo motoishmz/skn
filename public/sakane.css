@@ -1,0 +1,83 @@
+
+html, body
+ { 
+ 	background: #0c0c0c; 
+ }
+ @font-face{font-family:'ApercuBold';src:url('http://nuafk.jp/fonts/apercubold.ttf') format('truetype')}
+
+ .cover-container article p,
+ .cover-container article table{
+ 	font-size:200%;
+ 	 font-family: "ApercuBold"
+ } 
+
+body.single .masthead,
+body..mastfoot
+{
+	position:relative;
+}
+
+small
+{
+	font-size:50%;
+}
+ table td
+ {
+    text-align: left;
+ }
+ table tbody th
+ {
+ 	width:200px;
+ }
+
+.cover-container a
+{
+	text-decoration: underline;
+}
+.cover-container a.btn
+{
+	text-decoration: none;
+}
+
+.cover-container
+{
+	width:auto;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+
+
+article h1
+{
+	font-size:300%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+article h1 span
+{
+	font-size:150%;
+	display: block;
+	margin-bottom: 20px;
+}
+
+
+.text-attr li
+{
+	list-style: none;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+
+.text-attr  h2
+{
+	margin-top: 40px;
+	padding-bottom: 10px;
+}
+
+.contributed-text
+{
+	padding:30px;
+	font-size:200%;
+}
