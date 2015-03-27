@@ -18,7 +18,7 @@ module Sakane
 		end
 
 		configure :development do
-			# enable auto reloader 
+			# enable auto reloader
 			register Sinatra::Reloader
     		enable :logging
 			enable :inline_templates
@@ -54,7 +54,7 @@ module Sakane
 					erb :single, :locals => {
 						:footage => footage,
 						:file_found => file_found,
-						:text => text}
+						:text => RDiscount.new(text, :autolink, :filter_html).to_html}
 				else
 					erb :error404
 				end
