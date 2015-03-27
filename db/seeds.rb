@@ -1,6 +1,8 @@
 
 
-5.times do |i|
+range = 1..100
+
+range.each do |i|
   Sakane::Footage.create(
     title: "miniDV tape #{i}",
     date: Date.today,
